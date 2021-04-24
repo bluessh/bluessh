@@ -125,7 +125,7 @@ echo "/usr/sbin/nologin" >> /etc/shells
 # install squid
 cd
 apt -y install squid3
-wget -O /etc/squid/squid.conf "https://bluessh.my.id/squid3.conf"
+wget -O /etc/squid/squid.conf "https://raw.githubusercontent.com/bluessh/bluessh/main/squid3.conf"
 sed -i $MYIP2 /etc/squid/squid.conf
 
 # setting vnstat
@@ -179,7 +179,7 @@ sed -i 's/ENABLED=0/ENABLED=1/g' /etc/default/stunnel4
 /etc/init.d/stunnel4 restart
 
 #OpenVPN
-wget https://linkkalian/vpn.sh &&  chmod +x vpn.sh && ./vpn.sh
+wget https://raw.githubusercontent.com/bluessh/bluessh/main/vpn.sh &&  chmod +x vpn.sh && ./vpn.sh
 
 # install fail2ban
 apt -y install fail2ban
@@ -234,36 +234,36 @@ netfilter-persistent reload
 
 # download script
 cd /usr/bin
-wget -O add-host "https://bluessh.my.id/add-host.sh"
-wget -O about "https://bluessh.my.id/about.sh"
-wget -O menu "https://bluessh.my.id/menu.sh"
-wget -O usernew "https://bluessh.my.id/usernew.sh"
-wget -O trial "https://bluessh.my.id/trial.sh"
-wget -O hapus "https://bluessh.my.id/hapus.sh"
-wget -O member "https://bluessh.my.id/member.sh"
-wget -O delete "https://bluessh.my.id/delete.sh"
-wget -O cek "https://bluessh.my.id/cek.sh"
-wget -O restart "https://bluessh.my.id/restart.sh"
-wget -O speedtest "https://bluessh.my.id/speedtest_cli.py"
-wget -O info "https://bluessh.my.id/info.sh"
-wget -O ram "https://bluessh.my.id/ram.sh"
-wget -O renew "https://bluessh.my.id/renew.sh"
-wget -O autokill "https://bluessh.my.id/autokill.sh"
-wget -O ceklim "https://bluessh.my.id/ceklim.sh"
-wget -O tendang "https://bluessh.my.id/tendang.sh"
-wget -O clear-log "https://bluessh.my.id/clear-log.sh"
-wget -O change-port "https://bluessh.my.id/change.sh"
-wget -O port-ovpn "https://bluessh.my.id/port-ovpn.sh"
-wget -O port-ssl "https://bluessh.my.id/port-ssl.sh"
-wget -O port-wg "https://bluessh.my.id/port-wg.sh"
-wget -O port-tr "https://bluessh.my.id/port-tr.sh"
-wget -O port-sstp "https://bluessh.my.id/port-sstp.sh"
-wget -O port-squid "https://bluessh.my.id/port-squid.sh"
-wget -O port-ws "https://bluessh.my.id/port-ws.sh"
-wget -O port-vless "https://bluessh.my.id/port-vless.sh"
-wget -O wbmn "https://bluessh.my.id/webmin.sh"
-wget -O xp "https://bluessh.my.id/xp.sh"
-wget -O kernel-updt "https://bluessh.my.id/kernel-update.sh"
+wget -O add-host "https://raw.githubusercontent.com/bluessh/bluessh/main/add-host.sh"
+wget -O about "https://raw.githubusercontent.com/bluessh/bluessh/main/about.sh"
+wget -O menu "https://raw.githubusercontent.com/bluessh/bluessh/main/menu.sh"
+wget -O usernew "https://raw.githubusercontent.com/bluessh/bluessh/main/usernew.sh"
+wget -O trial "https://raw.githubusercontent.com/bluessh/bluessh/main/trial.sh"
+wget -O hapus "https://raw.githubusercontent.com/bluessh/bluessh/main/hapus.sh"
+wget -O member "https://raw.githubusercontent.com/bluessh/bluessh/main/member.sh"
+wget -O delete "https://raw.githubusercontent.com/bluessh/bluessh/main/delete.sh"
+wget -O cek "https://raw.githubusercontent.com/bluessh/bluessh/main/cek.sh"
+wget -O restart "https://raw.githubusercontent.com/bluessh/bluessh/main/restart.sh"
+wget -O speedtest "https://raw.githubusercontent.com/bluessh/bluessh/main/speedtest_cli.py"
+wget -O info "https://raw.githubusercontent.com/bluessh/bluessh/main/info.sh"
+wget -O ram "https://raw.githubusercontent.com/bluessh/bluessh/main/ram.sh"
+wget -O renew "https://raw.githubusercontent.com/bluessh/bluessh/main/renew.sh"
+wget -O autokill "https://raw.githubusercontent.com/bluessh/bluessh/main/autokill.sh"
+wget -O ceklim "https://raw.githubusercontent.com/bluessh/bluessh/main/ceklim.sh"
+wget -O tendang "https://raw.githubusercontent.com/bluessh/bluessh/main/tendang.sh"
+wget -O clear-log "https://raw.githubusercontent.com/bluessh/bluessh/main/clear-log.sh"
+wget -O change-port "https://raw.githubusercontent.com/bluessh/bluessh/main/change.sh"
+wget -O port-ovpn "https://raw.githubusercontent.com/bluessh/bluessh/main/port-ovpn.sh"
+wget -O port-ssl "https://raw.githubusercontent.com/bluessh/bluessh/main/port-ssl.sh"
+wget -O port-wg "https://raw.githubusercontent.com/bluessh/bluessh/main/port-wg.sh"
+wget -O port-tr "https://raw.githubusercontent.com/bluessh/bluessh/main//port-tr.sh"
+wget -O port-sstp "https://raw.githubusercontent.com/bluessh/bluessh/main/port-sstp.sh"
+wget -O port-squid "https://raw.githubusercontent.com/bluessh/bluessh/main/port-squid.sh"
+wget -O port-ws "https://raw.githubusercontent.com/bluessh/bluessh/main/port-ws.sh"
+wget -O port-vless "https://raw.githubusercontent.com/bluessh/bluessh/main/port-vless.sh"
+wget -O wbmn "https://raw.githubusercontent.com/bluessh/bluessh/main/webmin.sh"
+wget -O xp "https://raw.githubusercontent.com/bluessh/bluessh/main/xp.sh"
+wget -O kernel-updt "https://raw.githubusercontent.com/bluessh/bluessh/main/kernel-update.sh"
 chmod +x add-host
 chmod +x menu
 chmod +x usernew
