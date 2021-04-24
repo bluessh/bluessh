@@ -11,17 +11,6 @@ red='\e[1;31m'
 green='\e[0;32m'
 NC='\e[0m'
 MYIP=$(wget -qO- ifconfig.co);
-IZIN=$( curl http://bluessh.my.id:81/BskaoahdmsoahamoaJNlapabsmal | grep $MYIP )
-if [ $MYIP = $IZIN ]; then
-echo -e "${green}Permission Accepted...${NC}"
-else
-echo -e "${red}Permission Denied!${NC}";
-echo "Please Contact Admin"
-echo "Telegram t.me/adjieptra"
-echo "WhatsApp wa.me/6281210860345"
-rm -f setup.sh
-exit 0
-fi
 versi=$(cat /home/ver)
 if [[ $versi == 1.2 ]]; then
 echo "You Have The Latest Version"
@@ -29,25 +18,25 @@ exit 0
 fi
 echo "Start Update"
 cd /usr/bin
-wget -O menu "https://raw.githubusercontent.com/bluessh/bluessh/main/setup.sh/menu.sh"
-wget -O usernew "https://raw.githubusercontent.com/bluessh/bluessh/main/setup.sh/usernew.sh"
-wget -O trial "https://raw.githubusercontent.com/bluessh/bluessh/main/setup.sh/trial.sh"
-wget -O change-port "https://raw.githubusercontent.com/bluessh/bluessh/main/setup.sh/change.sh"
-wget -O port-ovpn "https://raw.githubusercontent.com/bluessh/bluessh/main/setup.sh/port-ovpn.sh"
-wget -O port-ssl "https://raw.githubusercontent.com/bluessh/bluessh/main/setup.sh/port-ssl.sh"
-wget -O port-wg "https://raw.githubusercontent.com/bluessh/bluessh/main/setup.sh/port-wg.sh"
-wget -O port-tr "https://raw.githubusercontent.com/bluessh/bluessh/main/setup.sh/port-tr.sh"
-wget -O port-sstp "https://raw.githubusercontent.com/bluessh/bluessh/main/setup.sh/port-sstp.sh"
-wget -O port-squid "https://raw.githubusercontent.com/bluessh/bluessh/main/setup.sh/port-squid.sh"
-wget -O port-ws "https://raw.githubusercontent.com/bluessh/bluessh/main/setup.sh/port-ws.sh"
-wget -O port-vless "https://raw.githubusercontent.com/bluessh/bluessh/main/setup.sh/port-vless.sh"
-wget -O wbmn "https://raw.githubusercontent.com/bluessh/bluessh/main/setup.sh/webmin.sh"
-wget -O xp "https://raw.githubusercontent.com/bluessh/bluessh/main/setup.sh/xp.sh"
-wget -O limit-speed "https://raw.githubusercontent.com/bluessh/bluessh/main/setup.sh/limit-speed.sh"
-wget -O add-sstp "https://raw.githubusercontent.com/bluessh/bluessh/main/setup.sh/add-sstp.sh"
-wget -O add-ws "https://raw.githubusercontent.com/bluessh/bluessh/main/setup.sh/add-ws.sh"
-wget -O add-vless "https://raw.githubusercontent.com/bluessh/bluessh/main/setup.sh/add-vless.sh"
-wget -O add-tr "https://raw.githubusercontent.com/bluessh/bluessh/main/setup.sh/add-tr.sh"
+wget -O menu "https://raw.githubusercontent.com/bluessh/bluessh/main/menu.sh"
+wget -O usernew "https://raw.githubusercontent.com/bluessh/bluessh/main/usernew.sh"
+wget -O trial "https://raw.githubusercontent.com/bluessh/bluessh/main/trial.sh"
+wget -O change-port "https://raw.githubusercontent.com/bluessh/bluessh/main/change.sh"
+wget -O port-ovpn "https://raw.githubusercontent.com/bluessh/bluessh/main/port-ovpn.sh"
+wget -O port-ssl "https://raw.githubusercontent.com/bluessh/bluessh/main/port-ssl.sh"
+wget -O port-wg "https://raw.githubusercontent.com/bluessh/bluessh/main/port-wg.sh"
+wget -O port-tr "https://raw.githubusercontent.com/bluessh/bluessh/main/port-tr.sh"
+wget -O port-sstp "https://raw.githubusercontent.com/bluessh/bluessh/main/port-sstp.sh"
+wget -O port-squid "https://raw.githubusercontent.com/bluessh/bluessh/main/port-squid.sh"
+wget -O port-ws "https://raw.githubusercontent.com/bluessh/bluessh/main/port-ws.sh"
+wget -O port-vless "https://raw.githubusercontent.com/bluessh/bluessh/main/port-vless.sh"
+wget -O wbmn "https://raw.githubusercontent.com/bluessh/bluessh/main/webmin.sh"
+wget -O xp "https://raw.githubusercontent.com/bluessh/bluessh/main/xp.sh"
+wget -O limit-speed "https://raw.githubusercontent.com/bluessh/bluessh/main/limit-speed.sh"
+wget -O add-sstp "https://raw.githubusercontent.com/bluessh/bluessh/main/add-sstp.sh"
+wget -O add-ws "https://raw.githubusercontent.com/bluessh/bluessh/main/add-ws.sh"
+wget -O add-vless "https://raw.githubusercontent.com/bluessh/bluessh/main/add-vless.sh"
+wget -O add-tr "https://raw.githubusercontent.com/bluessh/bluessh/main/add-tr.sh"
 chmod +x change-port
 chmod +x port-ovpn
 chmod +x port-ssl
