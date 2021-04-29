@@ -5,9 +5,9 @@ NC='\e[0m'
 MYIP=$(wget -qO- icanhazip.com);
 echo "Checking VPS"
 apt install jq curl -y
-DOMAIN=domain kalian
+DOMAIN=bluessh.my.id
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c4)
-SUB_DOMAIN=${sub}.domain kalian
+SUB_DOMAIN=${sub}.bluessh.my.id
 CF_ID=admin@bluessh.com
 CF_KEY=3e772d80afd15d9b4b9fad3f199a7ee154514
 set -euo pipefail
