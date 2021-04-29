@@ -25,10 +25,10 @@ touch /var/lib/premium-script/data-user-sstp
 country=ID
 state=Indonesia
 locality=Indonesia
-organization=www.vpnstores.net
-organizationalunit=www.vpnstores.net
-commonname=www.vpnstores.net
-email=admin@vpnstores.net
+organization=www.bluessh.my.id
+organizationalunit=www.bluessh.my.id
+commonname=www.bluessh.my.id
+email=admin@bluessh.my.id
 
 #install sstp
 apt-get install -y build-essential cmake gcc linux-headers-`uname -r` git libpcre3-dev libssl-dev liblua5.1-0-dev ppp
